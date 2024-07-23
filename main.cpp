@@ -1,7 +1,8 @@
 #include <iostream>
 #include <vector>
+#include <string>
 
-void print(const std::vector<int> &vec) {
+void print(const std::vector<std::string> &vec) {
     for(const auto &i : vec) {
         std::cout << i << " ";
     }
@@ -9,7 +10,7 @@ void print(const std::vector<int> &vec) {
 }
 
 int main() {
-    std::vector<int> list {1,2,3,4,5,6,7};
+    std::vector<std::string> list {"good","bad","ok"};
     print(list);
     return 0;
 }
